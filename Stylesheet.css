@@ -1,0 +1,711 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: white;
+    color: #171717;
+}
+h1{
+    font-family: "young serif";
+    font-size: 40pt;
+    font-weight: 100;
+    color:#155786;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 5pt;
+}
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+/* NAVIGATION */
+
+header {
+    width: 100%;
+    padding: 28px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+header .title{
+display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: end;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e37a35;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.blue {
+    text-decoration: none;
+    color:  #155786;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    opacity: .5;
+}
+
+/* PAGE INTRO */
+
+.intro {
+    padding: 65px 5% 35px;
+}
+
+.intro h1 {
+    font-size: clamp(48px, 8vw, 100px);
+    letter-spacing: -6px;
+    line-height: .95;
+    font-weight: 80;
+    text-transform:none
+    
+}
+
+.introp {
+    font-size: 14px;
+    width: 800px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: #8da7ba;
+    line-height: 1.7;
+    text-align: center;
+    justify-content:center
+    
+    
+}
+    
+
+/* PORTFOLIO GRID */
+
+.portfolio {
+    padding: 20px 5% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 22px;
+   
+    width: 100%;
+}
+.portfolio img{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+.project {
+    cursor: pointer;
+}
+
+.artwork {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: opacity .3s ease;
+}
+
+.project:hover .artwork {
+    opacity: .50;
+}
+
+.artwork span {
+    font-weight: 800;
+    text-align: center;
+    line-height: .9;
+    letter-spacing: -4px;
+    font-size: clamp(35px, 6vw, 85px);
+}
+
+/* SAMPLE ARTWORK */
+
+.BAP img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+
+
+/* PROJECT TITLES */
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+}
+
+.project-info h3 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.project-info p {
+    color: #888;
+    font-size: 11px;
+}
+/* for Bogco*/
+
+
+     .image-grid {
+    columns: 3;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+
+.image-grid {
+    columns: 3;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    break-inside: avoid;
+    margin-bottom: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border: 1px solid #8da7ba; */
+    border-radius: 5px;
+}
+
+.caption {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #155786;
+    text-align: center;
+
+
+}
+
+        
+
+        .introp {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #8da7ba;
+    line-height: 1.7;
+    text-align: center;
+    justify-content: flex-start;
+    line-width: 200px;
+        }
+        
+    .title{
+    font-family: "young serif";
+    font-weight: 100;
+    color:#155786;
+    text-align: center;
+    font-size: 24pt;
+}
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-size: 36pt;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.title nav {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.title nav a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    color: #e37a35;
+    font-size: 12px;
+}
+hr {
+    border: none;
+    height: 3px;           /* Thickness of line */
+    background-color: #e37a35;; /* Line color */
+    width: 100%;           /* Line length */
+}
+
+/*about me*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #28598b;
+        }
+
+        .about-section {
+            min-height: 100vh;
+            display: flex;
+            position: relative;
+            align-items: center;
+        }
+
+        /* Left orange section */
+        .left-section {
+            background-color: #d97850;
+            width: 37%;
+            min-height: 100vh;
+            padding: 90px 50px;
+        }
+
+        .left-section h1 {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 65px;
+            white-space: nowrap;
+        }
+
+        .left-section h2 {
+            color: #e5c65c;
+            font-family: Georgia, serif;
+            font-size: 38px;
+            font-style: italic;
+            font-weight: normal;
+            white-space: nowrap;
+            margin-left: 30px;
+        }
+
+        /* Picture section */
+        .photo {
+            position: absolute;
+            left: 20%;
+            top: 35%;
+            width: 340px;
+            padding: 20px;
+            background-color: white;
+            transform: rotate(-7deg);
+            z-index: 2;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Right text section */
+        .right-section {
+            width: 63%;
+            margin-left: auto;
+            padding: 70px 8% 70px 16%;
+        }
+
+        .right-section h2 {
+            font-size: 30px;
+            margin-bottom: 55px;
+        }
+
+        .right-section h2 span {
+            font-family: Georgia, serif;
+            font-size: 46px;
+            font-style: italic;
+        }
+
+        .right-section p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        /* Contact button */
+        /* .contact-button {
+            display: inline-block;
+            background-color: #d97850;
+            color: white;
+            text-decoration: none;
+            padding: 17px 35px;
+            font-size: 18px;
+            margin-top: 20px;
+            float: right;
+        }
+
+        .contact-button:hover {
+            background-color: #b95e3d;
+        } */
+
+        /* Mobile layout */
+        @media (max-width: 800px) {
+            .about-section {
+                flex-direction: column;
+            }
+
+            .left-section {
+                width: 100%;
+                min-height: 300px;
+                padding: 60px 25px;
+            }
+
+            .left-section h1 {
+                font-size: 48px;
+            }
+
+            .left-section h2 {
+                font-size: 28px;
+            }
+
+            .photo {
+                position: relative;
+                left: auto;
+                top: auto;
+                width: 250px;
+                margin: -70px auto 40px;
+            }
+
+            .photo img {
+                height: 250px;
+            }
+
+            .right-section {
+                width: 100%;
+                padding: 20px 30px 60px;
+            }
+
+            .right-section h2 {
+                margin-bottom: 25px;
+            }
+
+            .right-section p {
+                font-size: 17px;
+            }
+        }
+  
+
+        /*CV*/
+
+
+/* ==========================
+   CURRICULUM VITAE PAGE
+========================== */
+
+.cv-intro {
+    background-color: #d97850;
+    padding: 90px 10%;
+    text-align: center;
+    color: #fff0f5;
+}
+
+.cv-small-title {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.cv-intro h1 {
+    font-family: 'Young Serif', serif;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.cv-intro p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.cv-contact {
+    display: inline-block;
+    background-color: #f0efff;
+    color: #28598b;
+    padding: 15px 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cv-contact:hover {
+    background-color: #e5c65c;
+}
+
+
+/* CONTACT INFORMATION */
+
+.cv-contact-info {
+    background-color: #d9e0ff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+.cv-contact-info h3 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #d97850;
+}
+
+.cv-contact-info a {
+    color: #28598b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* CV SECTIONS */
+
+.cv-section {
+    background-color: #f0efff;
+    padding: 65px 12%;
+    color: #28598b;
+}
+
+.cv-section h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 35px;
+    color: #d97850;
+    margin-bottom: 35px;
+    border-bottom: 2px solid #d9e0ff;
+    padding-bottom: 15px;
+}
+
+
+/* EXPERIENCE AND EDUCATION ITEMS */
+
+.cv-item {
+    margin-bottom: 45px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d9e0ff;
+}
+
+.cv-item-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cv-item-heading h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cv-item-heading span {
+    color: #d97850;
+    font-size: 14px;
+}
+
+.cv-subtitle {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cv-item p {
+    line-height: 1.6;
+}
+
+.cv-item ul {
+    margin: 15px 0 0 25px;
+}
+
+.cv-item li {
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+
+/* SKILLS */
+
+.cv-skills {
+    background-color: #d9e0ff;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.skill-list span {
+    background-color: #d97850;
+    color: white;
+    padding: 15px 22px;
+    font-size: 15px;
+}
+
+
+/* FOOTER */
+
+.cv-footer {
+    background-color: #d97850;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.cv-footer h2 {
+    font-family: 'Young Serif', serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.cv-footer a {
+    display: inline-block;
+    background-color: #f0efff;
+    color: #28598b;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-bottom: 35px;
+}
+
+.cv-footer p {
+    font-size: 13px;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 700px) {
+
+    .cv-intro {
+        padding: 65px 20px;
+    }
+
+    .cv-intro h1 {
+        font-size: 42px;
+    }
+
+    .cv-contact-info {
+        flex-direction: column;
+    }
+
+    .cv-section {
+        padding: 45px 25px;
+    }
+
+    .cv-section h2 {
+        font-size: 28px;
+    }
+
+    .cv-item-heading {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .cv-item-heading h3 {
+        font-size: 19px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+    }
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 5%;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 22px 5%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 17px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .intro {
+        padding-top: 45px;
+    }
+
+    .intro h1 {
+        letter-spacing: -3px;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    footer {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
